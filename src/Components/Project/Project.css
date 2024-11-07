@@ -1,0 +1,64 @@
+.mywork{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+    margin: 5% 10%;
+}
+
+.mywork-title{
+    position: relative;
+}
+
+.mywork-title h1{
+    padding: 0px 5%;
+    font-size: 5vw;
+    font-weight: 5vw;
+}
+
+.mywork-title img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.mywork-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 5%;
+}
+
+.mywork-container img{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.mywork-container img:hover{
+    transform: scale(1.10);
+    border: 4px solid #ff00ff;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.mywork-showmore{
+    display: flex;
+    border: 2px solid white;
+    padding: 5% 10%;
+    font-size: 2vw;
+    font-weight: 2vw;
+    gap: 5%;
+    border-radius: 5vw;
+    margin-bottom: 5%;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.mywork-showmore:hover{
+    gap: 10%;
+    transition: 0.6s;
+}
